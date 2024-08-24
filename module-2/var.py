@@ -1,0 +1,10 @@
+x=9
+x=10
+y=8
+y=5
+print(x+y)
+z="Hello"
+print(z)
+z='a+10'
+print(z)
+print(x**y)#power

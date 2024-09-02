@@ -1,3 +1,4 @@
+import json
 
 fruits = ["apple", "banana", "cherry"]
 print(id(fruits))
@@ -28,3 +29,70 @@ print(marks)
 
 for item in marks:
     print(item)
+
+cities=("Dhaka","Khulna","Jam")
+print(id(cities))
+cities=cities=("Dhaka","Khulna")
+print(id(cities))
+cities=("Dhaka","Khulna","Jam",1,2)
+for item in cities:
+    print(item)
+
+country={"Bd","Ind","Pak"}
+city={"Raj","Dhk","Pak"}
+country.add("Nepal")
+print(country)
+country.update("a","b")
+print(country)
+country.remove("a")
+print(country)
+country.pop()
+print(country)
+country.pop()
+print(country)
+l=country.union(city)
+print(l)
+print(country.intersection(city))
+
+bill={
+    "Name":"Bill Gates",
+    "Age":65,
+    "Country":"USA",
+    "Occupation":"Business",
+    "Gender":"male"
+}
+
+bill.update(
+    {
+        "Age":70,
+        "Occupation":"Charity"
+    }
+)
+
+print(bill.get("Name"))
+print(bill["Age"])
+print(bill.values())
+
+billJSON=json.dumps(bill)
+print(billJSON)
+
+billJSON={"Name": "Bill Gates", "Age": 70, "Country": "USA", "Occupation": "Charity", "Gender": "male"}
+billObj=json.loads(billJSON)
+print(billObj)
+
+Peoples=[{
+    "name":"A",
+    "age":65
+},
+{
+    "name": "B",
+    "age": 65
+},
+{
+    "name":"C",
+    "age":65
+}
+]
+print(Peoples)
+PeopleJSONArray=json.dumps(Peoples)
+print(PeopleJSONArray)

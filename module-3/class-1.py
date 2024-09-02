@@ -16,21 +16,21 @@ if result:
 else:
     print(current_temp, "is odd number")
 
-# today = input("Enter a day:")
-# public_holiday = input("Is it public holiday?(yes/no)")
-# public_holiday = public_holiday.lower()
-# is_sick_today = input("Are you sick today?(yes/no)")
-# is_sick_today = is_sick_today.lower()
-# if today == "Sunday":
-#     print("No office day")
-# elif today == "Saturday":
-#     print("No office day")
-# elif public_holiday == "ÿes":
-#     print("No office day")
-# elif is_sick_today == "yes":
-#     print("No office day")
-# else:
-#     print("Office day")
+today = input("Enter a day:")
+public_holiday = input("Is it public holiday?(yes/no)")
+public_holiday = public_holiday.lower()
+is_sick_today = input("Are you sick today?(yes/no)")
+is_sick_today = is_sick_today.lower()
+if today == "Sunday":
+    print("No office day")
+elif today == "Saturday":
+    print("No office day")
+elif public_holiday == "ÿes":
+    print("No office day")
+elif is_sick_today == "yes":
+    print("No office day")
+else:
+    print("Office day")
 
 
 
@@ -51,6 +51,6 @@ color = input("Color:")
 milege = int(input("Milege:"))
 
 if meets_requirement(p,brand,color,milege):
-    print("COnsider it")
+    print("Consider it")
 else:
     print("Dont")

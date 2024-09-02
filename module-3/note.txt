@@ -1,1 +1,16 @@
-What is loop?
+list
+mutable
+allow duplicate data
+same memory location
+heterogeneous datatype(can be stored different types of data)
+dynamic size datatype
+append
+extend
+remove
+pop
+clear
+index
+sort
+reverse
+len
+loop

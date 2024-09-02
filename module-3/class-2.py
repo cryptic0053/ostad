@@ -76,7 +76,7 @@ print(bill.values())
 billJSON=json.dumps(bill)
 print(billJSON)
 
-billJSON={"Name": "Bill Gates", "Age": 70, "Country": "USA", "Occupation": "Charity", "Gender": "male"}
+
 billObj=json.loads(billJSON)
 print(billObj)
 

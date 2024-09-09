@@ -6,7 +6,7 @@ with open("demo.text","w") as file:
      print("success")
 with open("demo.text","w") as file:
        file.write("hello")
-     print("success")
+       print("success")
 with open("demo.text","r") as file:
      content=file.read()
      print(content)
@@ -18,13 +18,13 @@ os.mkdir("newFolder")
 os.rename("newFolder","newNewFolder")
 os.rmdir("newNewFolder")
 
- with open("newFolder/demo.text","w") as file:
-        file.write("hello")
-        print("success")
+with open("newFolder/demo.text","w") as file:
+    file.write("hello")
+    print("success")
 
- with open("newFolder/demo.text","r") as file:
-        content=file.read()
-        print(content)
+with open("newFolder/demo.text","r") as file:
+    content=file.read()
+    print(content)
 
  myResults=[
      ['Name','Subject','Group','Language'],
@@ -38,22 +38,26 @@ os.rmdir("newNewFolder")
      write.writerows(myResults)
      print("Completed")
 
- DicData={
+DicData={
      "name":"Argha",
-     "age":34,
+     "age":22,
      "city":"Raj"
 }
- JSONData=json.dumps(DicData)
+JSONData=json.dumps(DicData)
 
- print(JSONData)
+print(JSONData)
 
- with open('new.json','w') as file:
-     json.dump(DicData,file,indent=4)
-     print("completed")
+with open('new.json','w') as file:
+       json.dump(DicData,file,indent=4)
+       print("completed")
+try:
+    with open('new.json', 'r') as file:
+        DicData = json.load(file)
+        print(DicData)
+except Exception as error:
+        print(error)
 
- with open('new.json','r') as file:
-     DicData=json.load(file)
-     print(DicData)
+
 
 
 

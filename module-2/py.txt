@@ -31,3 +31,7 @@
 -strings
 -tuples
 -frozen sets
+
+-Strings
+-Single quote string(''):
+typically short string

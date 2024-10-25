@@ -1,6 +1,7 @@
 -- Active: 1728974094210@@127.0.0.1@3306@neww
 CREATE DATABASE neww;
 
+
 CREATE TABLE `employees` (
   `id` int(11) NOT NULL,
   `name` varchar(100) DEFAULT NULL,
@@ -43,3 +44,22 @@ INSERT INTO `employees` (`id`, `name`, `salary`, `designation`, `city`) VALUES
 
 ALTER TABLE `employees`
   ADD PRIMARY KEY (`id`);
+
+--select all row
+SELECT * FROM employees;
+
+--select specific column
+SELECT ID,NAME,salary FROM employees;
+
+SELECT ID,NAME,salary FROM employees WHERE salary>60000.00 AND salary<70000.00
+
+--order by
+SELECT * FROM employees order BY salary ASC;
+
+INSERT INTO employees(ID,NAME,salary,designation,city) VALUES(31,"Cryptic0053",56000.00,"Manager","Rajshahi")
+
+UPDATE employees SET salary=80000 WHERE NAME="Anirban Ghosh"
+
+DELETE FROM employees WHERE ID=30
+
+SELECT COUNT(*) AS salary_up_to_100k FROM employees WHERE salary<70000;

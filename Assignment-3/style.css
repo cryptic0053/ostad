@@ -1,5 +1,5 @@
 .all{
-    background:darkblue;
+    background:#161b40;
 }
 
 body {
@@ -8,6 +8,7 @@ body {
     background: #161b40;
     color: white;
 }
+
 
 /* Navbar */
 .navbar {
@@ -91,6 +92,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 100px 150px;
+    max-width: 100%;
 }
 
 .hero-text {
@@ -162,6 +164,7 @@ body {
     display: flex;
     justify-content: space-between; /* Space between text and cards */
     align-items: flex-start;
+    max-width: 100%;
 }
 
 .about-text {
@@ -1318,3 +1321,203 @@ blockquote {
     color: #01b76d;
 }
 
+@media (max-width: 1024px) {
+    .pricing-card ul {
+        flex-direction: column;  /* Stack the list items vertically */
+    }
+
+    .pricing-card h4 {
+        font-size: 18px;  /* Adjust font size */
+    }
+
+    .btn {
+        width: 100%;  /* Make buttons full width */
+    }
+
+    .faq-container {
+        display: flex;
+        flex-direction: column;  /* Stack FAQ items vertically */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;  /* Make form fields full width */
+    }
+
+    .footer .container {
+        padding: 0 20px;  /* Adjust padding in footer */
+    }
+
+    .footer .social-links a {
+        font-size: 18px;  /* Make social media icons bigger */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 12px;
+    }
+
+    .navbar .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .pricing-card ul {
+        padding-left: 10px;  /* Adjust padding on smaller screens */
+    }
+
+    .pricing-card ul li {
+        font-size: 12px;  /* Reduce font size */
+    }
+
+    .faq-question h3 {
+        font-size: 14px;  /* Adjust font size */
+    }
+
+    .faq-image img,
+    .pricing-card img {
+        max-width: 100%;  /* Ensure images are responsive */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;  /* Make form fields full width */
+    }
+
+    .footer .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar Font Size */
+    .navbar a {
+        font-size: 14px;  /* Adjust the size of links */
+    }
+
+    .pricing-card h4 {
+        font-size: 16px;  /* Adjust header font size */
+    }
+
+    .pricing-card ul li {
+        font-size: 14px;  /* Adjust list item font size */
+    }
+
+    .faq-question h3 {
+        font-size: 12px;  /* Adjust FAQ question font size */
+    }
+
+    .footer .container {
+        padding: 0 10px;  /* Reduce padding for small screens */
+    }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .pricing-card ul {
+        flex-direction: column;  
+    }
+
+    .pricing-card h4 {
+        font-size: 18px; 
+    }
+
+    .btn {
+        width: 100%;  
+    }
+
+    .faq-container {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;  
+    }
+
+    .footer .container {
+        padding: 0 20px;  
+    }
+
+    .footer .social-links a {
+        font-size: 18px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 12px;
+    }
+
+    .navbar .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .pricing-card ul {
+        padding-left: 10px;  
+    }
+
+    .pricing-card ul li {
+        font-size: 12px;  
+    }
+
+    .faq-question h3 {
+        font-size: 14px;  
+    }
+
+    .faq-image img,
+    .pricing-card img {
+        max-width: 100%;  
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;  
+    }
+
+    .footer .container {
+        padding: 0 20px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 14px;  
+    }
+
+    .pricing-card h4 {
+        font-size: 16px;  
+    }
+
+    .pricing-card ul li {
+        font-size: 14px;  
+    }
+
+    .faq-question h3 {
+        font-size: 12px;
+    }
+
+    .footer .container {
+        padding: 0 10px;
+    }
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,3 +103,109 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Basket</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand logo" href="#">World Peas</a>
+            <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <button class="btn btn-outline-dark ms-3">Basket</button>
+            </div>
+          </div>
+        </nav>
+    </header>
+      
+    <main class="container my-4">
+        <div class="row">
+          <!-- Basket Items -->
+          <div class="col-lg-8">
+            <div class="basket-item d-flex align-items-center p-3 mb-4 border rounded">
+              <img src="/tomato.png" alt="Sweet Onion" class="item-image">
+              <div class="ms-3">
+                <h5>Sweet onion</h5>
+                <p class="text-success">$5.99 / kg</p>
+              </div>
+              <span class="ms-auto">$5.99</span>
+            </div>
+
+            <div class="basket-item d-flex align-items-center p-3 mb-4 border rounded">
+              <img src="/ginger.png" alt="Sweet Onion" class="item-image">
+              <div class="ms-3">
+                <h5>Sweet onion</h5>
+                <p class="text-success">$12.99 / kg</p>
+              </div>
+              <span class="ms-auto">$6.50</span>
+            </div>
+
+            <div class="basket-item d-flex align-items-center p-3 mb-4 border rounded">
+              <img src="/onion.png" alt="Sweet Onion" class="item-image">
+              <div class="ms-3">
+                <h5>Sweet onion</h5>
+                <p class="text-success">$2.99 / kg</p>
+              </div>
+              <span class="ms-auto">$14.95</span>
+            </div>
+          </div>
+
+          <!-- Order Summary -->
+          <div class="col-lg-4">
+            <div class="p-4 border rounded bg-light">
+              <h5 class="mb-3">Order summary</h5>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Subtotal</span>
+                <span>$27.44</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Shipping</span>
+                <span>$3.99</span>
+              </div>
+              <div class="d-flex justify-content-between mb-3">
+                <span>Tax</span>
+                <span>$2.00</span>
+              </div>
+              <div class="d-flex justify-content-between fw-bold">
+                <span>Total</span>
+                <span>$33.43</span>
+              </div>
+              <button class="btn btn-success w-100 mt-4">Continue to payment</button>
+            </div>
+          </div>
+        </div>
+    </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+>>>>>>> c9ea2b7aefcf76b5601437e95926d5fd958e22a1

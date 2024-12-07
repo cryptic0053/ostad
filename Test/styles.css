@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -34,3 +35,41 @@ header .logo {
   object-fit: cover; 
   border-radius: 8px; 
 }
+=======
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+.nav {
+  margin-left: 600px;
+}
+
+.nav-link {
+  margin-right: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.basket-item {
+  height: 140px; 
+  display: flex;
+  align-items: center;
+  background-color: rgb(242, 242, 242);
+}
+
+.item-image {
+  height: 100%; 
+  width: auto; 
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+>>>>>>> c9ea2b7aefcf76b5601437e95926d5fd958e22a1

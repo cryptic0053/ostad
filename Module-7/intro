@@ -1,0 +1,10 @@
+JSON
+--Javascript Object Notation
+--json.dumps()->string-object
+--json.loads()->object-string
+--json.dump()->from file
+--json.load()->from file
+
+-A python module is a file containing python code,such as functions,variables and classes
+-can be imported and used in othe python scripts or interactive sessions
+-modules allow for code reuse,organizations

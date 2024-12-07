@@ -1,0 +1,40 @@
+Database
+--data
+--dbms(mySQL,postgreSQL,mongoDB,msSQL)
+--table
+--queries(sql)
+
+types of database
+--Relational Database(sql)
+--Nosql database(MongoDB,Redis)
+--Cloud database(AWS RDS,Google Cloud SQL)
+--Distributed database(Google Bigtable)
+
+how database work
+--data retrieval
+--data insertion
+--data deletion
+--data updates
+
+why are database important
+--Efficiency
+--Accuracy
+--Security
+--Scalability
+
+DBMS
+--Database Software(MongoDB,MSSQL,MySQL)
+--Tools for data organization,storage,retrieval and administration
+
+ACID properties
+--Atomicity
+--Consistency
+--Isolation
+--Durability
+
+Tools installation
+--XAMPP(live class)
+--DataGrip
+--DBForgeStudio
+--Oracle SQL Developer
+--VS Code Extension(live)

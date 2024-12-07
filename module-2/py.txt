@@ -1,0 +1,37 @@
+-Easy
+-Variables store data values
+-Python is dynamically typed
+-you don't need to declare a variable type explicitly
+
+-Rules
+-Descriptive Names
+-Lowercase with Underscores
+-Avoid Reserved Words
+-Start with a letter or underscore
+-No special characters
+-Case sensitivity
+-Short but meaningful
+-Use singular nouns
+-Consistency
+-Avoid Double Underscores
+
+-Data type
+-Numeric Types
+-String Types
+-Sequence Types
+
+-Boolean Type
+-None Type
+-Set Type
+-Mapping Type
+
+-Imutable:
+-objects cannot be modified after their creation
+-floating-point number
+-strings
+-tuples
+-frozen sets
+
+-Strings
+-Single quote string(''):
+typically short string

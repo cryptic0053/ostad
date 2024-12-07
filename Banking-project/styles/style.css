@@ -1,0 +1,13 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+.title{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    margin: 3px;
+}

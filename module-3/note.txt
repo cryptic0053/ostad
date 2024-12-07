@@ -1,0 +1,64 @@
+1.list[]***
+-ordered
+-mutable
+-allow duplicate data
+-same memory location
+-heterogeneous datatype(can be stored different types of data)
+-dynamic size datatype
+append
+extend
+remove
+pop
+clear
+index
+sort
+reverse
+len
+loop
+
+2.tuple()**
+-ordered
+-immutable
+-allow duplicate
+-heterogeneous
+-fixed size datatype
+count
+index
+loop
+
+3.set{}*
+-unordered
+-mutable
+-no duplicate
+-heterogeneous
+-dynamic size datatype
+add
+update
+remove
+pop
+clear
+union
+intersection
+difference
+issubset
+issuperset
+
+4.object,dictionary/map{}***
+keys
+values
+finding each value for the respective key
+clear
+get
+
+5.JSON
+Common Interchange Format
+Python,JS,Dart,Java
+Back End to Front End(B2C)
+Back End to Bank End(B2B)
+Rest API Development
+Rest API Implement
+Payment gateway
+SMS API
+
+Object-->JSON String
+JSON String-->Object

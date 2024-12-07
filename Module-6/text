@@ -1,0 +1,22 @@
+-What is oop
+-Key points
+--Class
+--Object
+--Attributes
+--Methods
+--Inheritance
+--Encapsulation
+--Polymorphism
+-Use case
+--Reusable
+--Real-world entities
+--Encapsulation
+--Inheritance for Reusability and Extensibility
+--Polymorphism for flexibility
+--Design pattern
+--Apis
+--Database interaction
+-Constructor
+--special method
+--automatically called when an object of a class is created
+--named __init__

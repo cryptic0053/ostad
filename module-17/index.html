@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="myEvent('Click')">Click</button>
+    <button onmouseover="myEvent('Over')">Over</button>
+    <button onmouseout="myEvent('Out')">Out</button>
+    <input onchange="myEvent('Change')">Change</input>
+    <input onkeydown="myEvent('Keydown')">Keydown</input>
+    <input onkeyup="myEvent('Keyup')">Keyup</input>
+    <script>
+        var cat = ["A", "B", "C", "D", "E"];
+        for (var i = 0; i < cat.length; i++) {
+            document.write(cat[i]+"<br>");
+        }
+
+        for(var item in cat){
+            document.write(cat[item]+"<br>");
+        }
+
+    var Person = {
+        name: "John",
+        age: 30,
+        city: "New York"
+    }    
+    for (var item in Person) {
+        document.write(Person[item]+"<br>");
+    }
+
+    var arr1 = ['A', 'B', 'C', 'D', 'E'];
+    var arr2 = ['F', 'G', 'H', 'I', 'J'];
+
+    var arr3 = arr1.concat(arr2);
+    var arr4 = arr2.concat(arr1);
+    document.write(arr3+"<br>");
+    document.write(arr4+"<br>");
+
+    var Title = "Hello World";
+    var TitleArray = Array.from(Title);
+    document.write(TitleArray+"<br>");
+
+
+    var numArr = [30,32,40,55,70,80,90];
+    var res = numArr.filter(function(item){
+        return item > 50;
+    });
+
+    document.write(res+"<br>");
+
+    var r = numArr.find(function(i){
+        return i < 80;
+    });
+
+    document.write(r+"<br>");
+
+    numArr.forEach(function(item){
+        document.write(item+"<br>");
+    });
+
+    var x = numArr.includes(70);
+    document.write(x+"<br>");
+
+    var x = numArr.indexOf(70);
+    document.write(x+"<br>");
+
+    document.write(numArr.reverse()+"<br>");
+
+    //slice
+    var arr = ['A', 'B', 'C', 'D', 'E'];
+    var res = arr.slice(1, 4);
+    document.write(res+"<br>");
+
+    //sort
+    var arr = ['C', 'A', 'B', 'D', 'E'];
+    document.write(arr.sort()+"<br>");
+
+    var a = ['A', 'B', 'C', 'D', 'E'];
+    a.splice(2, 3, 'X');
+    document.write(a+"<br>");
+
+    var country1 = "Bangladesh";
+    var country2 = "India";
+    document.write(country1.charAt(0));
+    document.write(country1.concat(country2)+"<br>");
+
+    document.write(new Date().toString()+"<br>");
+
+    function ObjAlert(){
+        alert("Save success")
+    }
+
+    function ObjConfirm(){
+        let a = confirm("Are you sure?");
+        document.write(a);
+    }
+    
+    function ObjPrompt(){
+        let a = prompt("Enter your name");
+        document.write(a);
+    }
+
+    function ObjOpen(){
+        window.open("https://www.google.com");
+    }
+
+document.write("App Code Name: " + navigator.appCodeName + "<br>");
+document.write("App Name: " + navigator.appName + "<br>");
+document.write("App Version: " + navigator.appVersion + "<br>");
+document.write("Cookies Enabled: " + navigator.cookieEnabled + "<br>");
+document.write("Platform: " + navigator.platform + "<br>");
+document.write("User Agent: " + navigator.userAgent + "<br>");
+document.write("Online Status: " + navigator.onLine + "<br>");
+document.write("Product: " + navigator.product + "<br>");
+document.write("Language: " + navigator.language + "<br>");
+document.write("Java Enabled: " + navigator.javaEnabled() + "<br>");
+document.write("Vendor: " + navigator.vendor + "<br>");
+document.write("Vendor Sub: " + navigator.vendorSub + "<br>");
+document.write("Product Sub: " + navigator.productSub + "<br>");
+
+// Check for buildID only in Firefox
+if ('buildID' in navigator) {
+    document.write("Build ID: " + navigator.buildID + "<br>");
+} else {
+    document.write("Build ID: Not Supported<br>");
+}
+
+document.write("Hardware Concurrency: " + navigator.hardwareConcurrency + "<br>");
+document.write("Max Touch Points: " + navigator.maxTouchPoints + "<br>");
+
+// Handle mediaDevices
+if (navigator.mediaDevices) {
+    document.write("Media Devices: Supported<br>");
+} else {
+    document.write("Media Devices: Not Supported<br>");
+}
+
+document.write("MIME Types: " + navigator.mimeTypes.length + "<br>");
+document.write("Plugins: " + navigator.plugins.length + "<br>");
+
+document.geolocation.getCurrentPosition(function(position) {
+    document.write("Latitude: " + position.coords.latitude + "<br>");
+    document.write("Longitude: " + position.coords.longitude + "<br>");
+    document.write("Accuracy: " + position.coords.accuracy + "<br>");
+    document.write("Altitude: " + position.coords.altitude + "<br>");
+    document.write("Altitude Accuracy: " + position.coords.altitudeAccuracy + "<br>");
+    document.write("Heading: " + position.coords.heading + "<br>");
+    document.write("Speed: " + position.coords.speed + "<br>");
+    document.write("Timestamp: " + position.timestamp + "<br>");
+});
+
+function myEvent(msg){
+    console.log(msg);
+}
+    </script>
+
+</body>
+</html>

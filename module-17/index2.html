@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    <h1 id="My id"></h1>
+    <h1 class="My Class"></h1>
+    <button class="My Class"></button>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>6</p>
+    <button onclick="Demo()">Click</button>
+
+    <button onclick="Win()">Click</button><br>
+
+    <input id="num1"/><br>
+    <input id="num2"/><br>
+    <button onclick="Add()">Add</button><br>
+    <output id="result">Result:</output><br>
+    
+
+    <script>
+
+        var MyElement = document.getElementById("My id");
+
+        MyElement.innerHTML = "Hello World";
+
+        var MyElement = document.getElementsByClassName("My Class");
+
+        MyElement[1].innerHTML = "He";
+
+        
+
+        function Demo(){
+
+            var info = document.URL;
+            document.getElementsByTagName('p')[0].innerHTML = info;
+
+            var info = document.title;
+            document.getElementsByTagName('p')[0].innerHTML = info;
+
+            var info = document.images.length;
+            document.getElementsByTagName('p')[0].innerHTML = info;
+
+            var info = document.links.length;
+            document.getElementsByTagName('p')[0].innerHTML = info;
+
+            var info = document.domain;
+            document.getElementsByTagName('p')[0].innerHTML = info;
+
+
+
+        }
+
+        function Win(){
+            var w = window.open();
+            w.document.open();
+            w.document.write("Hello");
+            w.document.close();
+
+            let Ml = document.getElementsByTagName('p');
+            let ItemCount = Ml.length;
+            alert(ItemCount);
+        }
+
+        function Add(){
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            var result = parseFloat(num1) + parseFloat(num2);
+            document.getElementById('result').innerHTML = result;
+        }
+
+    </script>
+    
+</body>
+
+
+</html>

@@ -7,5 +7,44 @@
 </head>
 <body>
     <h1>Welcome to the student profile</h1>
+    <h2>Name : {{ name }}</h2>
+    <h2>Age : {{ age }}</h2>
+    {% if age > 18 %}
+    <h2>Adult</h2>
+    {% else %}
+    <h2>not Adult</h2>
+    {% endif %}
+
+    <table border = '1'>
+        <tr>
+            <th>id</th>
+            <th>Subject</th>
+            <th>Mark</th>
+            <th>grade</th>
+        </tr>
+        {% for subject in marks %}
+            <tr>
+            <td>{{ subject.id }}</td>
+            <td>{{ subject.subject }}</td>
+            <td>{{ subject.marks }}</td>
+            <td>
+                {% if subject.marks >= 90 %}
+                  A+
+                  {% elif subject.marks >= 80 %}
+                    A
+                  {% elif subject.marks >= 70 %}
+                    B
+                  {% elif subject.marks >= 60 %}
+                    C
+                  {% else %}
+                    F
+                {% endif %}
+            </td>
+           </tr>
+        {% endfor %}
+
+        {{ age | add:'4' }}
+        {{ age | divisibleby:"2" }}
+    </table>
 </body>
 </html>

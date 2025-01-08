@@ -8,7 +8,7 @@ from django.http import HttpResponse
 def profile(request):
     user_data = {
         'name': 'John Doe',
-        'age': 10
+        'age': 10,
     }
     marks = [
         {

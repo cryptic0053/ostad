@@ -45,6 +45,16 @@
 
         {{ age | add:'4' }}
         {{ age | divisibleby:"2" }}
+        {{ "Hello World" | length }}
+        {{ "FUCK YOU" | lower }}
+        {{ "abcdef" | upper }}
+        {{ name | title }}
+        {{ name | truncatewords:2 }}
+        {{ name | truncatechars:2 }}
+        {{ name | slugify }}
+        {{ name | date:"Y-m-d" }}
+        {{ name | time:"H:i:s" }}
+        {{ name | default:"No name"}}
     </table>
 </body>
 </html>

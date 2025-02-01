@@ -1,0 +1,26 @@
+{% extends 'students/base.html' %}
+
+{% block content %}
+<h1>{{ form.instance.pk|yesno:"Update Student,Add Student" }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn">{{ form.instance.pk|yesno:"Update,Add" }} Student</button>
+</form>
+<a href="{% url 'student_list' %}" class="btn cancel-btn">Cancel</a>
+
+
+<style>
+    .btn {
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .cancel-btn {
+        background-color: #6c757d;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}

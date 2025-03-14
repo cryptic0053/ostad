@@ -1,0 +1,52 @@
+<div>
+  <h1>Hello, {{request.user|title}}</h1>
+  <form method="GET" style="display: flex">
+    <input
+      type="text"
+      name="search-area"
+      placeholder="Search your task"
+      value="{{search_input}}"
+    />
+    <input type="submit" value="Search" />
+  </form>
+  {% if tasks|length > 0 %}
+  <a href="{% url 'task-create' %}">Add Task</a>
+  {% endif %}
+</div>
+
+<div>
+  {% for task in tasks %}
+  <div style="display: flex">
+    <div style="margin: 15px">
+      {% if task.complete %}
+      <i
+        ><s
+          ><a
+            style="text-decoration: none"
+            href="{% url 'task-update' task.id %}"
+            >{{task}}</a
+          ></s
+        ></i
+      >
+      {% else %}
+      <a style="text-decoration: none" href="{% url 'task-update' task.id %}"
+        >{{task}}</a
+      >
+      {% endif %}
+    </div>
+    <div style="margin: 15px">
+      <a href="{% url 'task-delete' task.id %}">Delete</a>
+    </div>
+  </div>
+
+  {% empty %}
+  <div>
+    <h3>No new tasks are created.</h3>
+    <h3>
+      Create a
+      <a href="{% url 'task-create' %}">New task</a>
+      !
+    </h3>
+  </div>
+  {% endfor %}
+</div>

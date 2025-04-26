@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Contact
+from .models import Contact, Author, Book
 
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,3 +15,16 @@ class ContactSerializer(serializers.ModelSerializer):
             },
             #"address":{"required":False}
         }
+
+class AuthorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Author
+        fields = "__all__"
+
+class BookSerializer(serializers.ModelSerializer):
+    author = serializers.PrimaryKeyRelatedField(
+        queryset = Author.objects.all()
+    )
+    class Meta:
+        model = Book
+        fields = "__all__"

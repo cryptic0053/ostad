@@ -1,0 +1,24 @@
+.box{
+  padding: 10px;
+  border: 1px solid #000;
+  margin: 10px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+
+}
+
+.highlight{
+  background-color: green;
+  border: 1px solid #000;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.05);
+
+}

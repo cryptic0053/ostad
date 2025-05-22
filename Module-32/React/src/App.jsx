@@ -11,27 +11,27 @@ function App() {
   const showText = () => {
     alert("InnerText: " + paraRef.current.innerText);
     alert("InnerHTML: " + paraRef.current.innerHTML);
-    
   };
 
   const handleClick = () => {
     const title = divRef.current.getAttribute("title");
     alert("Title: " + title);
-    divRef.current.setAttribute("title","Now I am changed");
-    divRef.current.setAttribute("id","hover");
+    divRef.current.setAttribute("title", "Now I am changed");
+    divRef.current.setAttribute("id", "hover");
   };
 
   const showValue = () => {
     const value = inputRef.current.value;
     alert("Input Value: " + value);
-  }
+  };
 
   const toggle = () => {
     boxRef.current.classList.toggle("highlight");
   };
 
   const increase = () => {
-    setValue(value+1);alert("Count: " + value);
+    setValue(value + 1);
+    alert("Count: " + value);
   };
 
   return (
